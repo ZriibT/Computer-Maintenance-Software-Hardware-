@@ -1,0 +1,156 @@
+# Git Basics: Detailed Reference by Mr. Zarbout
+
+This document is a step-by-step reference for using Git effectively. It explains Git concepts and commands in a clear and structured way, perfect for beginners and self-learners.
+
+---
+
+## 🧠 What is Git?
+Git is a **version control system** that lets you track changes in your code, collaborate with others, and manage versions of your projects.
+
+---
+
+## 🔧 Basic Git Commands
+
+### 1. `git init`
+**Purpose:** Initialize a new Git repository in your project folder.
+```bash
+git init
+```
+This creates a hidden `.git` folder to start tracking your project.
+
+---
+
+### 2. `git status`
+**Purpose:** Show the current status of files—what's changed, what's staged, and what's untracked.
+```bash
+git status
+```
+
+---
+
+### 3. `git add`
+**Purpose:** Add changes to the staging area (preparing them to be committed).
+```bash
+git add file.txt       # Add a specific file
+git add .              # Add all changes in the folder
+```
+
+---
+
+### 4. `git commit`
+**Purpose:** Save staged changes to the repository with a message.
+```bash
+git commit -m "Write your commit message here"
+```
+
+---
+
+### 5. `git log`
+**Purpose:** Show the history of commits.
+```bash
+git log                # Detailed log
+git log --oneline      # Short summary
+```
+
+---
+
+### 6. `git remote add origin [URL]`
+**Purpose:** Connect your local repo to a GitHub repository.
+```bash
+git remote add origin https://github.com/yourusername/repo-name.git
+```
+
+---
+
+### 7. `git push`
+**Purpose:** Upload your local commits to GitHub.
+```bash
+git push origin main       # Push to the main branch
+```
+If it's the first push:
+```bash
+git push -u origin main    # Sets upstream (remembers the branch)
+```
+
+---
+
+### 8. `git pull`
+**Purpose:** Download the latest changes from GitHub and merge them into your local repo.
+```bash
+git pull origin main
+```
+
+---
+
+### 9. `git pull --rebase`
+**Purpose:** Same as pull, but cleaner. Reapplies your changes on top of the latest remote commits.
+```bash
+git pull origin main --rebase
+```
+
+---
+
+### 10. `git clone`
+**Purpose:** Copy a remote repo to your local machine.
+```bash
+git clone https://github.com/yourusername/repo-name.git
+```
+
+---
+
+## 🛠 Fixing Common Issues
+
+### 🚫 Push Rejected (non-fast-forward)
+```bash
+git pull origin main --rebase
+git push origin main
+```
+
+### ✏️ Edit Last Commit (before push)
+```bash
+git commit --amend
+```
+
+### ⚠️ Edit Commit After Push (careful!)
+```bash
+git commit --amend -m "New message"
+git push origin main --force
+```
+
+### 🔁 Rebase Older Commits
+```bash
+git rebase -i HEAD~3   # Edit the last 3 commits
+```
+
+---
+
+## 📂 Git File States
+| State        | Description                       |
+|--------------|------------------------------------|
+| Untracked    | Git doesn’t know this file yet     |
+| Modified     | File is changed but not staged     |
+| Staged       | Ready to be committed              |
+| Committed    | Saved in the Git repository        |
+
+---
+
+## 🌐 GitHub Tips
+- Always pull before pushing: `git pull origin main --rebase`
+- Use `.gitignore` to skip files you don’t want tracked
+- Use branches for features: `git checkout -b feature-name`
+- Review changes before commit: `git diff`
+
+---
+
+## ✅ Best Practices
+- Write clear commit messages
+- Commit small, logical chunks
+- Avoid force push unless you really know why
+- Use branches to avoid breaking the main code
+
+---
+
+Made with ❤️ by Mr. Zarbout — Learning, Teaching, Building.
+
+Perfect for new developers, and great to upload to your GitHub as a reference file or documentation!
+
