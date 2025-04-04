@@ -1,0 +1,230 @@
+[SCN_10H]
+MEANING="HP detection failure"
+DESCRIPTION="- CIS Unit failure\r\n- Scanner Housing Upper failure\r\n- Scanner Housing Lower failure\r\n- Scanner Motor failure\r\n- Foreign object\r\n- Main Board failure"
+
+[SCN_14H]
+MEANING="Measurement error"
+DESCRIPTION="- Scanner drive mechanism was overloaded\r\n- Insufficient grease\r\n- Foreign object\r\n- Lack of gears\r\n- Deformation of the shaft"
+
+[SCN_20H]
+MEANING="LED light error"
+DESCRIPTION="- CIS Unit failure\r\n- Main Board failure"
+
+[PRN_D1H]
+MEANING="CR PID driving time error"
+DESCRIPTION="- Main Board failure"
+
+[PRN_01H]
+MEANING="CR PID overload error"
+DESCRIPTION="- CR Motor failure\r\n- CR Unit drive mechanism overload (paper jam, foreign object,\r\n- insufficient grease, deformation of the Main Frame)\r\n- Some part may be detached. (Paper Guide Upper Assy, Cap Assy)\r\n- Tooth skip of the CR Timing Belt\r\n- Improper tension of the CR Timing Belt\r\n- Cable disconnection\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_02H]
+MEANING="CR PID excess speed error"
+DESCRIPTION="- CR Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_03H]
+MEANING="CR PID reverse error"
+DESCRIPTION="- CR Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Some external force is applied to the printer such as stopping the CR Unit during printer operation, vibration or the like.\r\n- Tooth skip of the CR Timing Belt\r\n- Paper jam\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_04H]
+MEANING="CR PID lock error"
+DESCRIPTION="- CR Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- CR Motor failure\r\n- CR Unit drive mechanism overload (paper jam, foreign object, insufficient grease, deformation of the Main Frame)\r\n- Some part may be detached. (Paper Guide Upper Assy, Cap Assy)\r\n- Cable disconnection\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_D2H]
+MEANING="CR load position driving time error"
+DESCRIPTION="- Change Lever failure\r\n- CR Motor failure\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_0AH]
+MEANING="CR load position excess load error
+"
+DESCRIPTION="- PF Motor failure\r\n- PF drive mechanism overload (paper jam, foreign object)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Cable disconnection"
+
+[PRN_09H]
+MEANING="CR load position overspeed error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_08H]
+MEANING="CR load position reverse error"
+DESCRIPTION="- CR Encoder failure (contaminated/detached scale, Encoder Sensor\r\n- failure)\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_D3H]
+MEANING="PF(PID) driving overtime error"
+DESCRIPTION="- Main Board failure (Firmware failure)"
+
+[PRN_F1H]
+MEANING="PF PID overload error"
+DESCRIPTION="- PF Motor failure\r\n- PF drive mechanism overload (paper jam, foreign object, insufficient\r\n- grease, deformation of the Main Frame)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Cable disconnection\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_F2H]
+MEANING="PF PID overspeed error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_F3H]
+MEANING="PF PID reverse error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Paper jam\r\n- Paper is pulled out from the ASF side when paper is fed\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_F4H]
+MEANING="PF PID lock error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- PF Motor failure\r\n- PF drive mechanism overload (paper jam, foreign object, insufficient grease, deformation of the Main Frame)\r\n- Cable disconnection\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_D4H]
+MEANING="PF load position driving overtime error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- PF Motor failure\r\n- PF drive mechanism overload (paper jam, foreign object)\r\n- Cable disconnection"
+
+[PRN_FAH]
+MEANING="PF load postion"
+DESCRIPTION="- PF Motor failure\r\n- PF drive mechanism overload (paper jam, foreign object)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Cable disconnection"
+
+[PRN_F9H]
+MEANING="PF load position excess speed error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_F8H]
+MEANING="PF load position reverse error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt"
+
+[PRN_41H]
+MEANING="X-Hot detect error (pre printing)"
+DESCRIPTION="- Printhead failure\r\n- Main Board failure"
+
+[PRN_42H]
+MEANING="X-Hot detect error (after flushing)"
+DESCRIPTION="- Printhead failure\r\n- Main Board failure"
+
+[PRN_40H]
+MEANING="Transistor temperature error"
+DESCRIPTION="- Main Board failure"
+
+[PRN_43H]
+MEANING="Head temperature error"
+DESCRIPTION="- Printhead failure\r\n- Main Board failure"
+
+[PRN_50H]
+MEANING="Home position error"
+DESCRIPTION="- Foreign object\r\n- Deformation of the Main Frame\r\n- Change Lever failure\r\n- Paper jam"
+
+[PRN_5BH]
+MEANING="Insoluble paper jam error"
+DESCRIPTION="- Foreign object\r\n- Deformation of the Main Frame\r\n- Change Lever failure\r\n- Paper jam"
+
+
+[SCN_100016]
+MEANING="HP detection failure"
+DESCRIPTION="- CIS Unit failure\r\n- Scanner Housing Upper failure\r\n- Scanner Housing Lower failure\r\n- Scanner Motor failure\r\n- Foreign object\r\n- Main Board failure"
+
+[SCN_100020]
+MEANING="Measurement error"
+DESCRIPTION="- Scanner drive mechanism was overloaded\r\n- Insufficient grease\r\n- Foreign object\r\n- Lack of gears\r\n- Deformation of the shaft"
+
+[SCN_100032]
+MEANING="LED light error"
+DESCRIPTION="- CIS Unit failure\r\n- Main Board failure"
+
+[PRN_000020]
+MEANING="CR PID driving time error"
+DESCRIPTION="- Main Board failure"
+
+[PRN_000021]
+MEANING="CR PID overload error"
+DESCRIPTION="- CR Motor failure\r\n- CR Unit drive mechanism overload (paper jam, foreign object,\r\n- insufficient grease, deformation of the Main Frame)\r\n- Some part may be detached. (Paper Guide Upper Assy, Cap Assy)\r\n- Tooth skip of the CR Timing Belt\r\n- Improper tension of the CR Timing Belt\r\n- Cable disconnection\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_000022]
+MEANING="CR PID excess speed error"
+DESCRIPTION="- CR Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_000023]
+MEANING="CR PID reverse error"
+DESCRIPTION="- CR Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Some external force is applied to the printer such as stopping the CR Unit during printer operation, vibration or the like.\r\n- Tooth skip of the CR Timing Belt\r\n- Paper jam\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_000024]
+MEANING="CR PID lock error"
+DESCRIPTION="- CR Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- CR Motor failure\r\n- CR Unit drive mechanism overload (paper jam, foreign object, insufficient grease, deformation of the Main Frame)\r\n- Some part may be detached. (Paper Guide Upper Assy, Cap Assy)\r\n- Cable disconnection\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_000030]
+MEANING="CR load position driving time error"
+DESCRIPTION="- Change Lever failure\r\n- CR Motor failure\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_000031]
+MEANING="CR load position excess load error
+"
+DESCRIPTION="- PF Motor failure\r\n- PF drive mechanism overload (paper jam, foreign object)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Cable disconnection"
+
+[PRN_000032]
+MEANING="CR load position overspeed error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_000033]
+MEANING="CR load position reverse error"
+DESCRIPTION="- CR Encoder failure (contaminated/detached scale, Encoder Sensor\r\n- failure)\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_000040]
+MEANING="PF(PID) driving overtime error"
+DESCRIPTION="- Main Board failure (Firmware failure)"
+
+[PRN_000041]
+MEANING="PF PID overload error"
+DESCRIPTION="- PF Motor failure\r\n- PF drive mechanism overload (paper jam, foreign object, insufficient\r\n- grease, deformation of the Main Frame)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Cable disconnection\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_000042]
+MEANING="PF PID overspeed error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_000043]
+MEANING="PF PID reverse error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Paper jam\r\n- Paper is pulled out from the ASF side when paper is fed\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_000044]
+MEANING="PF PID lock error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- PF Motor failure\r\n- PF drive mechanism overload (paper jam, foreign object, insufficient grease, deformation of the Main Frame)\r\n- Cable disconnection\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_000050]
+MEANING="PF load position driving overtime error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- PF Motor failure\r\n- PF drive mechanism overload (paper jam, foreign object)\r\n- Cable disconnection"
+
+[PRN_000051]
+MEANING="PF load postion"
+DESCRIPTION="- PF Motor failure\r\n- PF drive mechanism overload (paper jam, foreign object)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Cable disconnection"
+
+[PRN_000052]
+MEANING="PF load position excess speed error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt\r\n- Main Board failure (Motor driver failure)"
+
+[PRN_000053]
+MEANING="PF load position reverse error"
+DESCRIPTION="- PF Encoder failure (contaminated/detached scale, Encoder Sensor failure)\r\n- Tooth skip of the PF Timing Belt\r\n- Improper tension of the PF Timing Belt"
+
+[PRN_031001]
+MEANING="X-Hot detect error (pre printing)"
+DESCRIPTION="- Printhead failure\r\n- Main Board failure"
+
+[PRN_031002]
+MEANING="X-Hot detect error (after flushing)"
+DESCRIPTION="- Printhead failure\r\n- Main Board failure"
+
+[PRN_031003]
+MEANING="Transistor temperature error"
+DESCRIPTION="- Main Board failure"
+
+[PRN_031004]
+MEANING="Head temperature error"
+DESCRIPTION="- Printhead failure\r\n- Main Board failure"
+
+[PRN_034001]
+MEANING="Home position error"
+DESCRIPTION="- Foreign object\r\n- Deformation of the Main Frame\r\n- Change Lever failure\r\n- Paper jam"
+
+[PRN_034004]
+MEANING="Insoluble paper jam error"
+DESCRIPTION="- Foreign object\r\n- Deformation of the Main Frame\r\n- Change Lever failure\r\n- Paper jam"
+
+[PRN_060001]
+MEANING="The cause is not printer device error"
+DESCRIPTION="- Scanner failure"
+
+[SYS_202620]
+MEANING="Wi Fi error"
+DESCRIPTION="- WIFI board failure"
+
+[SYS_205102]
+MEANING="Card board error"
+DESCRIPTION="- Card board error"

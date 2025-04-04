@@ -1,0 +1,20 @@
+Method 1 - PowerShell (Recommended)
+On Windows 8.1/10/11
+
+Right-click on the windows start menu and select PowerShell or Terminal (Not CMD).
+
+Copy-paste the below code and press enter
+
+
+irm https://massgrave.dev/get | iex
+
+irm https://get.activated.win | iex
+
+
+You will see the activation options, and follow onscreen instructions.
+
+Select Option 1for Permanent Activation! 
+
+
+
+irm https://get.activated.win | iex

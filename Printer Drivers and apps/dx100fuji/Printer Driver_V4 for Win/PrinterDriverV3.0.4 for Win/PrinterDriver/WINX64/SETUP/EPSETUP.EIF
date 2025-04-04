@@ -1,0 +1,91 @@
+﻿[disks]
+1=. ,%DISKLABEL%
+
+[setup]
+caption=%INSTCAPTION%
+uninstall=%DRVNAME%,%UNINSTDISPLAY%,,%UNINSTDISPLAY%
+application=PIS_Printer
+PIS_Printer="%DRVNAME% Temporary Files",invisible
+nt5printer.inf=..\,%INFNAME%
+nt51printer.inf=..\,%INFNAME%
+options="/K'FUJIFILM' /NOLA"
+EIFVersion=5.40
+
+[preuninstall.winnt]
+%DRVNAME%=%DRVNAME%
+
+[PIS_Printer.winnt]
+%DRVNAME%=
+
+[kickmodule.winnt]
+%DRVNAME%=0,",DEVICEOP.EXE,/W32 /LANG /MSG:2000 /MFG:'%MFG%' /DES:'%DRVNAME%' /MDL:'%MDL%' /DRV /PNP /INF /SDP /P:'USB' /P:'LPT',"
+
+[message.winnt]
+1013=%1013%
+1000=%1000%
+2000=%2000%
+2001=%2001%
+2002=%2002%
+2010=%2010%
+2011=%2011%
+2012=%2012%
+
+[message]
+1100=%1100%
+
+[Strings.0011]
+MFG="FUJIFILM"
+MDL="DX100"
+DRVNAME="FUJIFILM DX100"
+DISKLABEL="FUJIFILM DX100"
+INFNAME="E_GF1JAE.INF"
+INSTCAPTION="FUJIFILM プリンター ユーティリティー セットアップ"
+UNINSTDISPLAY="%DRVNAME% Printer Uninstall"
+1100="本機は現在お使いのオペレーティングシステムではご利用になれません。"
+1000="セットアップは正常に終了しました。"
+1013="セットアップは正常に終了しました。Windowsシステムを再起動してください。"
+2000 = "プリンタードライバーのインストールおよび接続先（ポート）の設定は正常に終了しました。"
+2001 = "プリンターの接続先（ポート）を「%PORT%」に設定しました。\n\nプリンターの接続先（ポート）の設定を確認してご使用ください。"
+2002 = "プリンターの接続先（ポート）を「%PORT%」に設定しました。\n\nプリンターの接続先（ポート）の設定を確認してご使用ください。"
+2010 = "プリンタードライバーのインストールおよび接続先（ポート）の設定は正常に終了しました。\n\nコンピューターを再起動してください。"
+2011 = "プリンターの接続先（ポート）を「%PORT%」に設定しました。\nコンピューターを再起動してください。\n\n再起動の後、プリンターの接続先（ポート）の設定を確認してご使用ください。"
+2012 = "プリンターの接続先（ポート）を「%PORT%」に設定しました。\nコンピューターを再起動してください。\n\n再起動の後、プリンターの接続先（ポート）の設定を確認してご使用ください。"
+LANG_DIR= "JAPANESE"
+
+[Strings]
+MFG="FUJIFILM"
+MDL="DX100"
+DRVNAME="FUJIFILM DX100"
+DISKLABEL="FUJIFILM DX100"
+INFNAME="E_GF1JAE.INF"
+INSTCAPTION="FUJIFILM Printer Utility Setup"
+UNINSTDISPLAY="%DRVNAME% Printer Uninstall"
+1100="This printer cannot be used with your current operating system"
+1000="Setup is complete."
+1013="Setup is complete. Please reboot your system."
+2000 = "Printer driver installation and port configuration were completed successfully."
+2001 = "The printer port is set to %PORT%.\n\nTo use the printer on a network, change the printer port as necessary."
+2002 = "The printer port is set to %PORT%.\n\nTo use the printer on a network, change the printer port as necessary."
+2010 = "Printer driver installation and port configuration were completed successfully.\n\nRestart your computer."
+2011 = "The printer port is set to %PORT%.\n\nTo use the printer on a network, restart your computer and then change the printer port as necessary."
+2012 = "The printer port is set to %PORT%.\n\nTo use the printer on a network, restart your computer and then change the printer port as necessary."
+LANG_DIR= "ENGLISH"
+
+[Strings.0016]
+MFG="FUJIFILM"
+MDL="DX100"
+DRVNAME="FUJIFILM DX100"
+DISKLABEL="FUJIFILM DX100"
+INFNAME="E_GF1JAE.INF"
+INSTCAPTION="Utilitário FUJIFILM de Configuração da Impressora"
+UNINSTDISPLAY="Desinstalar Impressora %DRVNAME%"
+1100="Esta impressora não pode ser utilizada com o seu sistema operativo actual."
+1000="A instalação está completa."
+1013="A instalação está completa. Reinicie o sistema."
+2000="A instalação do controlador da impressora e a configuração da porta foram bem sucedidas."
+2001="A porta da impressora está configurada para %PORT%.\n\nPara utilizar a impressora em rede, seleccione a porta adequada."
+2002="A porta da impressora está configurada para %PORT%.\n\nPara utilizar a impressora em rede, seleccione a porta adequada."
+2010="A instalação do controlador da impressora e a configuração da porta foram bem sucedidas.\n\nReinicie o computador."
+2011="A porta da impressora está configurada para %PORT%.\n\nPara utilizar a impressora em rede, reinicie o computador e seleccione a porta adequada."
+2012="A porta da impressora está configurada para %PORT%.\n\nPara utilizar a impressora em rede, reinicie o computador e seleccione a porta adequada."
+LANG_DIR= "PORTUGAL"
